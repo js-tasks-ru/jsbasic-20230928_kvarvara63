@@ -6,3 +6,5 @@ function makeFriendsList(friends) {
     }
     return ul;
   }
+
+  // есть ли другой способ решения?
