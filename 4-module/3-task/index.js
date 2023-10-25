@@ -8,19 +8,17 @@ function highlight(table) {
     } else{
       tr.hidden = true;
     }
-  }
-
-    let gender = tr.cells[2];
+  let gender = tr.cells[2];
     if (gender.dataset.gender === "m"){
       tr.classList.add("male");
     } else {
       tr.classList.add("female");
     }
-
     let age = tr.cells[1];
     if (age < 18){
       tr.style.textDecoration = "line-through";
     } else {
-      return tr.style.textDecoration = "none";
+      tr.style.textDecoration = "none"; // или лучше tr.style.textDecoration = ''; ?
     }
+  }
 }
